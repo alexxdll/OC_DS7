@@ -1,7 +1,7 @@
 # Update and install requirements
-sudo yum update
-sudo yum install -y python3-pip nginx
-sudo yum install -y uvicorn
+sudo apt-get update
+sudo apt install -y python3-pip nginx
+sudo apt install -y uvicorn
 # Copy the configuration file to the nginx enabled sites folder
 sudo cp -R fastapi_setup /etc/nginx/sites-enabled/
 sudo service nginx restart
@@ -12,4 +12,4 @@ pip3 install -r requirements.txt
 sudo kill -9 $(sudo lsof -t -i:80)
 sudo service nginx restart
 # Run the application with nohup so the application runs as a background process
-nohup python3 -m uvicorn app:app --reload --host 0.0.0.0
+nohup python3 -m uvicorn main:main --reload --host 0.0.0.0
