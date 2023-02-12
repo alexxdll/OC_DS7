@@ -1,6 +1,6 @@
 # Update and install requirements
 sudo apt-get update
-sudo apt install -y python3.10-pip nginx
+sudo apt install -y python3-pip nginx
 sudo apt install -y uvicorn
 # Copy the configuration file to the nginx enabled sites folder
 sudo cp -R fastapi_setup /etc/nginx/sites-enabled/
