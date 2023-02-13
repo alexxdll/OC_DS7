@@ -88,4 +88,3 @@ uvicorn==0.20.0
 validators==0.20.0
 webencodings==0.5.1
 xgboost==1.7.3
-zict==2.1.0
