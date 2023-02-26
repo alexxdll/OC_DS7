@@ -52,23 +52,33 @@ Mettre en production le modèle de scoring de prédiction à l’aide d’une AP
 
 - README.md: fichier de présentation du projet
 
-- Répertoire "fastapi":
-  - fichier "main.py": code de l'API. peut retourner une prediction ou des shap_values d'un client
-  - fichier "model.pkl": modèle de classification exporté via mlflow.sklearn.log_model
-  - fichier "Procfile": script pour déployer le code sur Heroku
-  - fichier "README.md": Explique le fonctionnement de l'API
-  - fichier "requirements.txt": Contient toutes les librairies et dépendances nécéssaires pour faire tourner le code
-  - fichier "sample_test_set.pickle": dataset sous format DataFrame de la librairie pandas
+- Répertoire Delaguillaumie_Alexandre_1_dashboard_et_API_022023:
+  - Répertoire "fastapi":
+    - fichier "main.py": code de l'API. peut retourner une prediction ou des shap_values d'un client
+    - fichier "model.pkl": modèle de classification exporté via mlflow.sklearn.log_model
+    - fichier "Procfile": script pour déployer le code sur Heroku
+    - fichier "README.md": Explique le fonctionnement de l'API
+    - fichier "requirements.txt": Contient toutes les librairies et dépendances nécéssaires pour faire tourner le code
+    - fichier "sample_test_set.pickle": dataset sous format DataFrame de la librairie pandas
+  - Répertoire "Streamlit":
+    - fichier "Dashboard.py":
+    - fichier "infos_client.pickle":
+    - fichier "model.pkl": modèle de classification exporté via mlflow.sklearn.log_model
+    - fichier "preprocessed_data.pickle": model pré-entrainé pour récupérer le nom des colonnes après traitement
+    - fichier "pret_client.pickle":
+    - fichier "Procfile": script pour déployer le code sur Heroku
+    - fichier "README.md": Explique le fonctionnement de l'API
+    - fichier "requirements.txt": Contient toutes les librairies et dépendances nécéssaires pour faire tourner le code
+    - fichier "runtime.txt" : donne la bonne version de Python compatible avec Heroku et les librairies
+    - fichier "sample_test_set.pickle": dataset sous format DataFrame de la librairie pandas
+    - fichier "setup.sh": script de configuration de l'interface Streamlit
 
-- Répertoire "Streamlit":
-  - fichier "Dashboard.py":
-  - fichier "infos_client.pickle":
-  - fichier "model.pkl": modèle de classification exporté via mlflow.sklearn.log_model
-  - fichier "preprocessed_data.pickle": model pré-entrainé pour récupérer le nom des colonnes après traitement
-  - fichier "pret_client.pickle":
-  - fichier "Procfile": script pour déployer le code sur Heroku
-  - fichier "README.md": Explique le fonctionnement de l'API
-  - fichier "requirements.txt": Contient toutes les librairies et dépendances nécéssaires pour faire tourner le code
-  - fichier "runtime.txt" : donne la bonne version de Python compatible avec Heroku et les librairies
-  - fichier "sample_test_set.pickle": dataset sous format DataFrame de la librairie pandas
-  - fichier "setup.sh": script de configuration de l'interface Streamlit
+- Répertoire Delaguillaumie_Alexandre_1_dashboard_et_API_022023:
+  - Répertoire "Data Drift":
+    - fichier "data_drift.html": rapport d'analyse du datadrift au format html
+    - répertoire "metrics": comprend l'intégralité des résultats d'analyse du Data Drift pour chaque colonne sus-nommée au format lisible sur MLFlow
+    - Notebook "Data Drift": Contient l'intégralité du code nécéssaire à l'élaboration du rapport d'analyse
+  - Notebook "modelisation": L'ensemble du travail de merge des tables, gestion des valeurs abérrantes, pre-processing, tests d'algorithmes, choix et enregistrement des paramètres via MLFlow, interprétabilité et exports
+
+- fichier "Delaguillaumie_Alexandre_3_note_méthodologique_022023.pdf": note méthodologique du projet
+- fichier "Delaguillaumie_Alexandre_4_presentation_022023.pdf": présentation du projet
